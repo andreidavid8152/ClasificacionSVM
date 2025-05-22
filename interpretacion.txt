@@ -1,0 +1,26 @@
+MODELO DE CLASIFICACIÓN SVM – ANÁLISIS DE RESULTADOS
+
+Este modelo se ha desarrollado utilizando datos de solicitudes de crédito,
+con el objetivo de predecir si un solicitante será aprobado o no aprobado para un crédito,
+en función de cinco variables:
+  - Edad (años, numérica)
+  - IngresosMensuales (USD, numérica)
+  - CantidadDeudas (número de deudas, numérica)
+  - HistorialCrediticio (Bueno/Regular/Malo, categórica)
+  - NivelEducativo (Secundaria/Universitario/Postgrado, categórica)
+
+El algoritmo utilizado fue Support Vector Machine.
+La variable objetivo fue binarizada: 1 para "Sí" (aprobado) y 0 para "No" (no aprobado).
+
+Los resultados obtenidos fueron:
+
+  • Exactitud (accuracy):        0.944
+  • Precisión (clase Sí):        0.923
+  • Recall (sensibilidad):       0.667
+  • F1-score:                    0.774
+
+La matriz de confusión muestra 12 verdaderos positivos (TP) y 106 verdaderos negativos (TN),
+con 1 falsos positivos (FP) y 6 falsos negativos (FN).
+
+Estos resultados indican que el modelo identifica correctamente aproximadamente el 94.4% de los casos
+y logra una sensibilidad del 66.7% para detectar solicitudes aprobadas.
